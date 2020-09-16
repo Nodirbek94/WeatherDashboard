@@ -20,6 +20,26 @@ $(document).ready(function () {
             $("#temperature").text("Temperature: " + tempF.toFixed(2) + " °F");
             $("#humidity").text("Humidity: " + response.main.humidity + "%");
             $("#windspeed").text("Wind Speed: " + response.wind.speed + " MPH");
+            $("#Icon0").attr("src", "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png");
+            $("#date0-temp").text("Temperature: " + tempF.toFixed(2) + " °F");
+            $("#date0-humidity").text("Humidity: " + response.main.humidity + "%");
+            $("#date0-wind").text("Wind Speed: " + response.wind.speed + " MPH");
+            $("#Icon1").attr("src", "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png");
+            $("#date1-temp").text("Temperature: " + tempF.toFixed(2) + " °F");
+            $("#date1-humidity").text("Humidity: " + response.main.humidity + "%");
+            $("#date1-wind").text("Wind Speed: " + response.wind.speed + " MPH");
+            $("#Icon2").attr("src", "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png");
+            $("#date2-temp").text("Temperature: " + tempF.toFixed(2) + " °F");
+            $("#date2-humidity").text("Humidity: " + response.main.humidity + "%");
+            $("#date2-wind").text("Wind Speed: " + response.wind.speed + " MPH");
+            $("#Icon3").attr("src", "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png");
+            $("#date3-temp").text("Temperature: " + tempF.toFixed(2) + " °F");
+            $("#date3-humidity").text("Humidity: " + response.main.humidity + "%");
+            $("#date3-wind").text("Wind Speed: " + response.wind.speed + " MPH");
+            $("#Icon4").attr("src", "https://openweathermap.org/img/wn/" + currentIcon + "@2x.png");
+            $("#date4-temp").text("Temperature: " + tempF.toFixed(2) + " °F");
+            $("#date4-humidity").text("Humidity: " + response.main.humidity + "%");
+            $("#date4-wind").text("Wind Speed: " + response.wind.speed + " MPH");
         })
     })
 })
