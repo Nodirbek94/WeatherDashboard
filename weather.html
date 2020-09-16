@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Weather Dashboard</h1>
+    </nav>
+
+    <main class="container">
+        <section class="row">
+            <section class="col-4 border border-dark m-1">
+                <h3><strong>Search for a City:</strong></h3>
+                <section class="form-inline">
+                    <input class="form-control" id="city-input" type="text" placeholder="Search for a City">
+                    <button class="btn btn-primary" id="search-button" type="button">Search</button>
+                </section>
+                <section class="mr-5 mt-2" id="search-history"></section>
+                <button class="btn btn-primary" id="clear-history">Clear History</button>
+            </section>
+            <section class="col-7 mt-4 border border-dark m-1">
+                <section class="row" id="current-weather">
+                    <section class="col-7">
+                        <h4 id="city-name"><img id="currentIcon"></img>
+                            <p id="currentDay" class="lead"></p>
+                        </h4>
+                        <p id="temperature"></p>
+                        <p id="humidity"></p>
+                        <p id="windspeed"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="row">
+            <section class="col-8">
+                <h3>5-Day Forecast</h3>
+                <section class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                        <section id="day0"></section>
+                        <h5 id="date0"></h5>
+                        <div id="date0-icon"><img src=""></div>
+                        <div id="date0-temp">
+                            <p>-°<span>C</span></p>
+                        </div>
+                        <div id="date0-humidity">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                        <section id="day1"></section>
+                        <h5 id="date1"></h5>
+                        <div id="date1-icon"><img src=""></div>
+                        <div id="date1-temp">
+                            <p>-°<span>C</span></p>
+                        </div>
+                        <div id="date1-humidity">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                        <section id="day2"></section>
+                        <h5 id="date2"></h5>
+                        <div id="date2-icon"><img src=""></div>
+                        <div id="date2-temp">
+                            <p>-°<span>C</span></p>
+                        </div>
+                        <div id="date2-humidity">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                        <section id="day3"></section>
+                        <h5 id="date3"></h5>
+                        <div id="date3-icon"><img src=""></div>
+                        <div id="date3-temp">
+                            <p>-°<span>C</span></p>
+                        </div>
+                        <div class="date3-humidity">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                        <section id="day4"></section>
+                        <h5 id="date4"></h5>
+                        <div id="date4-icon"><img src=""></div>
+                        <div id="date4-temp">
+                            <p>-°<span>C</span></p>
+                        </div>
+                        <div id="date4-humidity">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
